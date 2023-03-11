@@ -1,5 +1,6 @@
 # 简易键盘记录器
 
+
 ## 文件记录在 c:\\Windows\\temp\\ 目录下，以时间戳命名。
 ```
 func main() {
@@ -23,7 +24,10 @@ func main() {
 2023/03/11 17:56:08 r
 2023/03/11 17:56:08 [Enter]
 ```
-
+## 编译代码
+```
+go build -ldflags "-H windowsgui -s -w" ./main.go
+```
 
 
 ## 参考项目
