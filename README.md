@@ -25,8 +25,11 @@ func main() {
 2023/03/11 17:56:08 [Enter]
 ```
 ## 编译代码
+建议使用garble 混淆
 ```
 go build -ldflags "-H windowsgui -s -w" ./main.go
+
+garble build -ldflags "-H windowsgui -s -w" ./main.go
 ```
 
 
